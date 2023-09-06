@@ -1,0 +1,32 @@
+body {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+	padding: 200px;
+}
+
+.accordion {
+	width: 500px;
+	border-radius: 4px;
+	overflow: hidden;
+	border: none;
+	margin-bottom: 20px;
+}
+
+.accordion__toggle {
+	text-align: left;
+	padding: 20px;
+	width: 100%;
+}
+
+.accordion__toggle:hover {
+	border: 1px solid #E39600;
+}
+
+.accordion__content {
+	display: none;
+	padding: 20px;
+}
+
+.accordion__content--visible {
+	display: block;
+}
