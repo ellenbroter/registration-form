@@ -12,13 +12,13 @@
 		<h1>Kjøp billetter</h1>
 			<div class="accordion">
 				<button class="accordion__toggle">Velg film</button>
-				<div class="accordion__content">--Velg film--<br>
-					Barbie<br>
-					Oppenheimer<br>
-					The Equalizer 3<br>
-					Fedrelandet<br>
-					Doggy Style
-				</div>
+					
+					<li class="accordion__content">--Velg film--</li>
+					<li class="accordion__content">Barbie</li>
+					<li class="accordion__content">Oppenheimer</li>
+					<li class="accordion__content">The Equalizer 3</li>
+					<li class="accordion__content">Fedrelandet</li>
+					<li class="accordion__content">Doggy Style</li>
 			</div>	
 			
 			<div class="accordion">
@@ -41,6 +41,50 @@
 				<label>4DX</label>
 				<input type="radio">
 				<label>3D</label>
+			</div>
+
+			<div class="quantity-selector">
+				<div class="quantity-text">
+					<div>Standard</div>
+					<div>100kr/billett</div>
+				</div>
+				<div class="quantity-button">
+					<form id='myform' method='POST' class='quantity' action='#'>
+					<input type='button' value='-' class='qtyminus minus' field='quantity' />
+					<input type='text' name='quantity' value='0' class='qty' />
+					<input type='button' value='+' class='qtyplus plus' field='quantity' />
+				 </form>
+				</div>
+			</div>
+		
+			<div class="customer-details">
+				<form>
+					<label>
+						<p>Fornavn*</p>
+						<input type="text" name="firstname" placeholder="Fornavn" required>
+					</label>
+					<label>
+						<p>Etternavn*</p>
+						<input type="text" name="lastname" placeholder="Etternavn" required>
+					</label>
+		
+					<label>
+						<p>E-post*</p>
+						<input type="email" name="email" placeholder="E-post" required>
+					</label>
+					<label>
+						<p>Bekreft e-post*</p>
+						<input type="confirm-email" name="confirm-email" placeholder="E-post" required>
+					</label>
+					
+					<label>
+						<p>Mobilnummer*</p>
+						<input type="tel" name="mobilenumber" placeholder="Mobilnummer" required>
+					</label>
+				</form>
+			</div>
+			<div>
+				<button>Fortsett</button>
 			</div>
 
 		<script src="js/script.js"></script>
