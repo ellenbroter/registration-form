@@ -50,35 +50,35 @@
 				</div>
 				<div class="quantity-button">
 					<form id='myform' method='POST' class='quantity' action='#'>
-					<input type='button' value='-' class='qtyminus minus' field='quantity' />
-					<input type='text' name='quantity' value='0' class='qty' />
-					<input type='button' value='+' class='qtyplus plus' field='quantity' />
-				 </form>
+						<input type='button' value='-' class='button-minus' field='quantity'/>
+						<input type='text' name='quantity' value='0' class='qty' />
+						<input type='button' value='+' class='button-plus' field='quantity'/>
+				 	</form>
 				</div>
 			</div>
 		
 			<div class="customer-details">
 				<form>
 					<label>
-						<p>Fornavn*</p>
+						<p>Fornavn<span class="required-star">*</span></p>
 						<input type="text" name="firstname" placeholder="Fornavn" required>
 					</label>
 					<label>
-						<p>Etternavn*</p>
+						<p>Etternavn<span class="required-star">*</span></p>
 						<input type="text" name="lastname" placeholder="Etternavn" required>
 					</label>
 		
 					<label>
-						<p>E-post*</p>
+						<p>E-post<span class="required-star">*</span></p>
 						<input type="email" name="email" placeholder="E-post" required>
 					</label>
 					<label>
-						<p>Bekreft e-post*</p>
+						<p>Bekreft e-post<span class="required-star">*</span></p>
 						<input type="confirm-email" name="confirm-email" placeholder="E-post" required>
 					</label>
 					
 					<label>
-						<p>Mobilnummer*</p>
+						<p>Mobilnummer<span class="required-star">*</span></p>
 						<input type="tel" name="mobilenumber" placeholder="Mobilnummer" required>
 					</label>
 				</form>
