@@ -42,6 +42,17 @@
 				<input type="radio">
 				<label>3D</label>
 			</div>
+			<form>
+				<label for="vehicle1"> All</label>
+				<input type="checkbox" value="Bike">
+				<label for="vehicle2"> 2D</label>
+				<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+				<label for="vehicle3"> 4DX</label>
+				<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+				<label for="vehicle3"> 3D</label>
+				<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+			 </form>
+
 
 			<div class="quantity-selector">
 				<div class="quantity-text">
@@ -56,34 +67,20 @@
 				 	</form>
 				</div>
 			</div>
-		
-			<div class="customer-details">
-				<form>
-					<label>
-						<p>Fornavn<span class="required-star">*</span></p>
-						<input type="text" name="firstname" placeholder="Fornavn" required>
-					</label>
-					<label>
-						<p>Etternavn<span class="required-star">*</span></p>
-						<input type="text" name="lastname" placeholder="Etternavn" required>
-					</label>
-		
-					<label>
-						<p>E-post<span class="required-star">*</span></p>
-						<input type="email" name="email" placeholder="E-post" required>
-					</label>
-					<label>
-						<p>Bekreft e-post<span class="required-star">*</span></p>
-						<input type="confirm-email" name="confirm-email" placeholder="E-post" required>
-					</label>
-					
-					<label>
-						<p>Mobilnummer<span class="required-star">*</span></p>
-						<input type="tel" name="mobilenumber" placeholder="Mobilnummer" required>
-					</label>
-				</form>
-			</div>
-			<div>
+
+			<form class="customer-details">
+				<label for="text">Fornavn<span class="required-star">*</span></label>
+				<input type="text" placeholder="Fornavn" required>
+				<label for="text">Etternavn<span class="required-star">*</span></label>
+				<input type="text" placeholder="Etternavn" required>
+				<label for="email">E-post<span class="required-star">*</span></label>
+				<input type="email" placeholder="E-post" required>
+				<label for="confirm-email">Bekreft e-post<span class="required-star">*</span></label>
+				<input type="confirm-email" name="confirm-email" placeholder="E-post" required>
+				<label for="tel">Mobilnummer<span class="required-star">*</span></label>
+				<input type="tel" name="mobilenumber" placeholder="Mobilnummer" required>
+			</form>
+			
 				<button>Fortsett</button>
 			</div>
 
