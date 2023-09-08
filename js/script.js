@@ -8,3 +8,4 @@ accordions.forEach(accordion => {
 		accordion_content.classList.toggle('accordion__content--visible')		
 	});
 });
+
