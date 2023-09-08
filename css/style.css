@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@600&family=Libre+Baskerville&display=swap');
+
 body {
 	background-color: #0E0E1B;
 	color: #fff;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: Inter;
 	font-size: 20px;
 	padding: 50px;
+}
+
+.column1 {
+display: flex;
+flex-flow: column wrap;
+gap: 20px;
+}
+
+.column2 {
+display: flex;
+flex-flow: column wrap;
+gap: 20px;
 }
 
 /* Accordion */
