@@ -13,27 +13,28 @@
 		
 		<div class="page-wrapper">		
 			<div class="column1">
-			<div class="accordion">
-				<button class="accordion__toggle">Velg film</button>
-					
-					<li class="accordion__content">--Velg film--</li>
-					<li class="accordion__content">Barbie</li>
-					<li class="accordion__content">Oppenheimer</li>
-					<li class="accordion__content">The Equalizer 3</li>
-					<li class="accordion__content">Fedrelandet</li>
-					<li class="accordion__content">Doggy Style</li>
-			</div>	
 			
-			<div class="accordion">
-				<button class="accordion__toggle">Velg kino</button>
-				<div class="accordion__content">--Velg kino--<br>
-					Colusseum<br>
-					Ringen<br>
-					Gimle<br>
-					Klingenberg<br>
-					Symra
-				</div>
-			</div>
+				<div class="custom-select" style="width:200px;">
+					<select>
+					  <option value="0">Velg kino:</option>
+					  <option value="1">Colusseum</option>
+					  <option value="2">Ringen</option>
+					  <option value="3">Gimle</option>
+					  <option value="4">Klingenberg</option>
+					  <option value="5">Symra</option>
+					</select>
+				 </div>
+			  
+				 <div class="custom-select" style="width:200px;">
+					<select>
+					  <option value="0">Velg film:</option>
+					  <option value="1">Barbie</option>
+					  <option value="2">Oppenheimer</option>
+					  <option value="3">Fedrelandet</option>
+					  <option value="4">The Equalizer 3</option>
+					  <option value="5">Doggy Style</option>
+					</select>
+				 </div>
 			
 			<div class="checkboxes">
 				<input type="checkbox" value="Select All" onclick="selectAll()" id="TestAll">
@@ -46,22 +47,17 @@
 				<label>3D</label>
 			</div>
 
+			<label class="date" for="datemin">Velg dato:</label>
+  <input type="date" id="datemin" name="datemin" min="2023-09-16">
 
 
-			<div class="quantity-selector">
-				<div class="quantity-text">
-					<div>Standard</div>
-					<div>100kr/billett</div>
-				</div>
-				<div class="quantity-button">
-					<form id='myform' method='POST' class='quantity' action='#'>
-						<input type='button' value='-' class='button-minus' field='quantity'/>
-						<input type='text' name='quantity' value='0' class='qty' />
-						<input type='button' value='+' class='button-plus' field='quantity'/>
-				 	</form>
-				</div>
-			</div>
+  <div class="counter">
+	<div class="down" onClick='decreaseCount(event, this)'>-</div>
+	<input class="ticket-quantity" type="text" value="1">
+	<div class="up"  onClick='increaseCount(event, this)'>+</div>
+ </div>
 		</div>
+
 		<div class="column2">
 			<form class="customer-details">
 				<div><label for="text">Fornavn<span class="required-star">*</span></label></div>
@@ -75,8 +71,7 @@
 				<div><label for="tel">Mobilnummer<span class="required-star">*</span></label></div>
 				<div><input type="tel" name="mobilenumber" placeholder="Mobilnummer" required></div>
 			</form>
-			
-				<button>Fortsett</button>
+			<button>Fortsett</button>
 		</div>
 	</div>
 		<script src="js/script.js"></script>
