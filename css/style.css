@@ -3,17 +3,17 @@ body {
 	color: #fff;
 	font-family: Inter, sans-serif;
 	font-weight: 400;
-	font-size: 14px;
-	padding: 30px;
+	font-size: 1rem;
+	padding: 2rem;
 }
 
 /* Flexbox: */
 .page-wrapper {
 	display: flex;
-	gap: 30px;
+	gap: 2rem;
 	justify-content: flex-start;
 	flex-flow: row nowrap;
-	padding: 20px;
+	padding: 1.5rem;
 }
 
 .column1 {
@@ -25,7 +25,7 @@ body {
 .column2 {
 	display: flex;
 	flex-flow: column nowrap;
-	gap: 30px;
+	gap: 2rem;
 }
 
 /* h1: */
@@ -35,15 +35,15 @@ h1 {
 }
 
 /* Select element: */
-.select-selected {
+  .select-selected {
 	background-color: #0E0E1B;
  }
  
  .select-selected:after {
 	position: absolute;
 	content: "";
-	top: 14px;
-	right: 10px;
+	top: 1rem;
+	right: 0.5rem;
 	width: 0;
 	height: 0;
 	border: 6px solid transparent;
@@ -52,7 +52,7 @@ h1 {
  
  .select-selected,.select-arrow-active:after {
 	border-color: transparent transparent #E39600 transparent;
-	top: 7px;
+	top: 6px;
  }
  
  .select-items div,.select-selected {
