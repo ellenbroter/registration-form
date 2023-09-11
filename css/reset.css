@@ -34,3 +34,8 @@ input {
 	background-color: inherit;
 	outline: none;
 }
+
+.date {
+	font: inherit;
+	color: inherit;
+}

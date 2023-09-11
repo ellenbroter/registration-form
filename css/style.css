@@ -107,6 +107,7 @@ button:hover {
 
 .custom-select {
 	position: relative;
+	width: 200px;
  }
  
  .custom-select select {
