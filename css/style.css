@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@600&family=Libre+Baskerville&display=swap');
-
 body {
 	background-color: #0E0E1B;
 	color: #fff;
-	font-family: Inter;
+	font-family: Inter, sans-serif;
+	font-weight: 400;
 	font-size: 14px;
 	padding: 30px;
 }
 
+/* Flexbox: */
 .page-wrapper {
 	display: flex;
 	gap: 30px;
@@ -28,97 +28,17 @@ flex-flow: column nowrap;
 gap: 30px;
 }
 
-/*Drop down box*/
+/* h1: */
+h1 {
+	font-family: Inter, sans-serif;
+	font-weight: 500;
+}
 
-
-.dropbtn {
-	background-color: #171927;
-	cursor: pointer;
-	width: 100%;
- }
- 
- .dropbtn:hover, .dropbtn:focus {
+/* The select element: */
+  .select-selected {
 	background-color: #0E0E1B;
  }
  
- .dropdown {
-	position: relative;
-	display: inline-block;
- }
- 
- .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	overflow: auto;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	width: 100%;
- }
- 
- .dropdown-content a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
- }
- 
- .dropdown a:hover {background-color: #ddd;}
- 
- .show {display: block;}
-
-/* Customer details */
-input {
-	background-color: #171927;
-}
-
-/* Button */
-button {
-	background-color: #E39600;
-	width: 50%;
-	text-align: center;
-	margin-top: 5px;
-
-}
-
-button:hover {
-	background-color: #79520D;
-}
-
-.button-plus, .button-minus {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	background-color: #E39600;
-	height: 15px;
-	width: 15px;
-}
-
-.required-star {
-	color:#E39600;
-}
-
-.customer-details {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.custom-select {
-	position: relative;
-	width: 200px;
- }
- 
- .custom-select select {
-	display: none; /*hide original SELECT element: */
- }
- 
- .select-selected {
-	background-color: #0E0E1B;
- }
- 
- /* Style the arrow inside the select element: */
  .select-selected:after {
 	position: absolute;
 	content: "";
@@ -130,13 +50,11 @@ button:hover {
 	border-color: #E39600 transparent transparent transparent;
  }
  
- /* Point the arrow upwards when the select box is open (active): */
- .select-selected.select-arrow-active:after {
+ .select-selected,.select-arrow-active:after {
 	border-color: transparent transparent #E39600 transparent;
 	top: 7px;
  }
  
- /* style the items (options), including the selected item: */
  .select-items div,.select-selected {
 	color: #ffffff;
 	padding: 8px 16px;
@@ -145,7 +63,6 @@ button:hover {
 	cursor: pointer;
  }
  
- /* Style items (options): */
  .select-items {
 	position: absolute;
 	background-color: #0E0E1B;
@@ -155,7 +72,6 @@ button:hover {
 	z-index: 99;
  }
  
- /* Hide the items when the select box is closed: */
  .select-hide {
 	display: none;
  }
@@ -164,17 +80,8 @@ button:hover {
 	background-color: #171927;
 	border-radius: 4px;
  }
-
- .undertext {
-	font-size: 12px;
-	color: #9d9d9d;
- }
-
- .quantity-text {
-	display: flex;
-	justify-content: space-between;
- }
-
+ 
+/* Ticket quantity selecter */
  .counter {
 	display: flex;
 	justify-content: flex-start;
@@ -199,6 +106,54 @@ button:hover {
 	text-align: center;
  }
 
+ /* Select date */
 .date {
 	padding-left: 20px;
+}
+
+
+
+/* Customer details: */
+input {
+	background-color: #171927;
+}
+
+.customer-details {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.custom-select {
+	position: relative;
+	width: 200px;
+ }
+ 
+ .custom-select select {
+	display: none;
+ }
+
+.required-star {
+	color:#E39600;
+}
+
+/* Button: */
+button {
+	background-color: #E39600;
+	width: 50%;
+	text-align: center;
+	margin-top: 5px;
+}
+
+button:hover {
+	background-color: #79520D;
+}
+
+.button-plus, .button-minus {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #E39600;
+	height: 15px;
+	width: 15px;
 }
