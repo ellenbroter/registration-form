@@ -49,15 +49,15 @@
 				<label>3D</label>
 			</div>
 
-			<div>
-				<label class="date" for="datemin">Velg dato:</label>
-  				<input type="date" id="datemin" name="datemin" min="2023-09-16">
+			<div class="date-selector">
+				<label class="date" for="date">Velg dato:</label>
+  				<input type="date" id="date" name="date">
 			</div>
 
   			<div class="counter">
-				<div class="down" onClick='decreaseCount(event, this)'>-</div>
+				<button class="down" onClick='decreaseCount(event, this)'>-</button>
 				<input class="ticket-quantity" type="text" value="1">
-				<div class="up"  onClick='increaseCount(event, this)'>+</div>
+				<button class="up"  onClick='increaseCount(event, this)'>+</button>
 			</div>
 		</div>
 
