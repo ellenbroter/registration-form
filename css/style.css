@@ -16,13 +16,13 @@ body {
 	padding: var(--spacing-medium);
 }
 
-.column1 {
+.page-wrapper__column1 {
 	display: flex;
 	flex-flow: column nowrap;
 	gap: var(--spacing-medium);
 }
 
-.column2 {
+.page-wrapper__column2 {
 	display: flex;
 	flex-flow: column nowrap;
 	gap: var(--spacing-medium);
@@ -93,7 +93,7 @@ h1 {
 
  }
 
- .up, .down {
+ .counter__quantity--up, .counter__quantity--down {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -104,13 +104,13 @@ h1 {
 	border-radius: var(--border-radius);
  }
 
- .ticket-quantity {
+ .counter-quantity {
 	width: 20%;
 	text-align: center;
  }
 
  /* Select date: */
-.date {
+ .date-selector__select {
 	padding-left: var(--spacing-medium);
 }
 
@@ -134,7 +134,7 @@ input {
 	display: none;
  }
 
-.required-star {
+.customer-details__required-star {
 	color: var(--color-quarternary);
 	font-size: var(--font-size-medium);
 	font-weight: 500;
@@ -152,11 +152,3 @@ button:hover {
 	background-color: var(--color-quinary);
 }
 
-.button-plus, .button-minus {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	background-color: var(--color-quarternary);
-	height: var(--spacing-medium);
-	width: var(--spacing-medium);
-}	
