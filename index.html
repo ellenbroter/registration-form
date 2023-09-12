@@ -14,7 +14,7 @@
 		<h1>Kjøp billetter</h1>
 		
 		<div class="page-wrapper">		
-			<div class="column1">
+			<div class="page-wrapper__column1">
 			
 				<div class="custom-select">
 					<select>
@@ -39,7 +39,7 @@
 				 </div>
 			
 			<div class="checkboxes">
-				<input type="checkbox" value="Select All" onclick="selectAll()" id="TestAll">
+				<input type="checkbox" value="Select All" onclick="selectAll()">
 				<label>Alle </label>
 				<input type="checkbox">
 				<label>2D</label>
@@ -50,28 +50,28 @@
 			</div>
 
 			<div class="date-selector">
-				<label class="date" for="date">Velg dato:</label>
+				<label class="date-selector__select" for="date">Velg dato:</label>
   				<input type="date" id="date" name="date">
 			</div>
 
   			<div class="counter">
-				<button class="down" onClick='decreaseCount(event, this)'>-</button>
-				<input class="ticket-quantity" type="text" value="1">
-				<button class="up"  onClick='increaseCount(event, this)'>+</button>
+				<button class="counter__quantity--down" onClick='decreaseCount(event, this)'>-</button>
+				<input class="counter__quantity" type="text" value="1">
+				<button class="counter__quantity--up"  onClick='increaseCount(event, this)'>+</button>
 			</div>
 		</div>
 
-		<div class="column2">
+		<div class="page-wrapper__column2">
 			<form class="customer-details">
-				<div><label for="text">Fornavn<span class="required-star">*</span></label></div>
+				<div><label for="text">Fornavn<span class="customer-details__required-star">*</span></label></div>
 				<div><input type="text" placeholder="Fornavn" required></div>
-				<div><label for="text">Etternavn<span class="required-star">*</span></label></div>
+				<div><label for="text">Etternavn<span class="customer-details__required-star">*</span></label></div>
 				<div><input type="text" placeholder="Etternavn" required></div>
-				<div><label for="email">E-post<span class="required-star">*</span></label></div>
+				<div><label for="email">E-post<span class="customer-details__required-star">*</span></label></div>
 				<div><input type="email" placeholder="E-post" required></div>
-				<div><label for="confirm-email">Bekreft e-post<span class="required-star">*</span></label></div>
+				<div><label for="confirm-email">Bekreft e-post<span class="customer-details__required-star">*</span></label></div>
 				<div><input type="confirm-email" name="confirm-email" placeholder="E-post" required></div>
-				<div><label for="tel">Mobilnummer<span class="required-star">*</span></label></div>
+				<div><label for="tel">Mobilnummer<span class="customer-details__required-star">*</span></label></div>
 				<div><input type="tel" name="mobilenumber" placeholder="Mobilnummer" required></div>
 			</form>
 			<button>Fortsett</button>
