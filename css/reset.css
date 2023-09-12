@@ -9,8 +9,8 @@ button {
 	border: none;
 	cursor: pointer;
 	touch-action: manipulation;
-	padding: 0.6rem;
-	border-radius: 0.25rem;
+	padding: var(--spacing-small);
+	border-radius: var(--border-radius);
 }
 
 a {
@@ -21,22 +21,17 @@ a {
 input {
 	font-family: inherit;
 	border: none;
-	padding: 0.6rem;
-	border-radius: 0.25rem;
+	padding: var(--spacing-small);
+	border-radius: var(--border-radius);
 	color: inherit;
 	outline: none;
 }
 
 .checkboxes {
 	border: none;
-	padding: 0.6rem;
-	border-radius: 0.25rem;
+	padding: var(--spacing-small);
+	border-radius: var(--border-radius);
 	color: inherit;
 	background-color: inherit;
 	outline: none;
-}
-
-#id {
-	font-family: inherit;
-	color: #A8A8A8;
 }
