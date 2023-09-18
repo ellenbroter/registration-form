@@ -103,7 +103,7 @@ h1 {
 	border-radius: var(--border-radius);
  }
 
- .counter-quantity {
+ .counter__quantity {
 	width: 3rem;
 	text-align: center;
  }
