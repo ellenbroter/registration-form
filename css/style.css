@@ -90,6 +90,7 @@ h1 {
 	cursor: pointer;
 	padding-left: var(--spacing-medium);
 	padding-top: var(--spacing-small);
+	width: 20%;
 
  }
 
@@ -98,7 +99,7 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	height: var(--spacing-large);
-	width: var(--spacing-small);
+	width: var(--spacing-large);
 	background-color: var(--color-quarternary);
 	text-align: center;
 	border-radius: var(--border-radius);
